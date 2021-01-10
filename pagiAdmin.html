@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administracion</title>
+    <!--utilizacion del main.js-->
+    <script src="main.js"></script> 
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="Logo">logo <span>Empresa</span></h1>
+        </div>
+        <nav id="site-nav" class="site-nav">
+            <ul>
+                <li><a href="index.html"><i class="site-nav--icon">Inicio</i></a></li>
+                <li><a href="login.html"><i class="site-nav--icon">Acceder</i></a></li>
+                <li><a href="registroUsua.html"><i class="site-nav--icon">Registrarse</i></a></li>
+                <li><a href=""><i class="site-nav--icon">Acerca de</i></a></li>
+                <li><a href=""><i class="site-nav--icon">Idea de propuesta</i></a></li>
+                <li><a href="pagTrnasfe.html"><i class="site-nav--icon">Transacción</i></a></li>
+                <li><a href="pagConsul.html"><i class="site-nav--icon">Consulta</i></a></li>
+                <li><a href="pagiAdmin.html"><i class="site-nav--icon">Administración</i></a></li>
+            </ul>
+        </nav>
+        <div id="menu-toggle" class="menu-toggle" onclick="esconder()">
+            <div class="prueba"> </div>
+        </div>
+    </header>
+    <center>
+        <div class="card">
+            <span class="price">$89.99</span>
+            <img src="img/item-1.png" alt="" width="350"
+            height="341">
+            <div class="card-info">
+                <h4 class="has-text-black has-text-centered has-text-weight-bold"> Women's Burnt Orenge
+                    Casual TEE $89.99 </h4>
+                <p class="has-text-centered">Classic casual t-shirt for women on the move.
+                    100%
+                    cotton.</p>
+                    <label>Unidades disponible</label>
+                    <label id="unidad">1300</label>
+                    <br>
+                    <label>Usuario:</label>
+                    <label id="unidad">Pedro Loor</label>
+                    <br>
+                    <label>Dirección:</label>
+                    <label id="unidad">montecristi</label>
+                    <br>
+                    <label>Pedido:</label>
+                    <label id="unidad">200</label>
+                    <br>
+                    <label class="prue" for="envio">Envio</label>
+                    <input class="control" type="date" name="fenvi" id="fenvi" value="2021-01-10" min="2021-01-09">
+                    <br>                
+                    <input class="boton-A" id="btn-1" type="submit" value="Aprobar" onclick="Aprobar()">
+                    <input class="boton-P" id="btn-2" type="submit" value="Por despachar" onclick="Por_despachar()">
+                    <input class="boton-R" id="btn-3" type="submit" value="Rechazar" onclick="pedido()">
+                    <input class="boton-M" id="btn-4" type="submit" value="Modificar fecha" onclick="pedido()">
+
+                    
+            </div>
+        </div>
+        
+    </center>
+</body>
+</html>

@@ -1,0 +1,309 @@
+body{
+    background:white ;
+    font-family: 'Roboto',sans-serif;
+}
+.container{
+    width: 95%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+header{
+    background-color: teal;
+    color: white;
+    padding: .1em 0;
+    position: relative;
+}
+header::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.logo{
+    float: left;
+    font-size: 1rem;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.logo span{
+    font-weight: 300;
+}
+.site-nav{
+    top: 100%;
+    right: 0;
+    position: absolute;
+    background: #464655;
+    height: 0;
+    overflow: hidden;
+}
+.site-nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.site-nav li{
+    border-bottom: 1px solid #575766;
+}
+.site-nav li:last-child{
+    border-bottom: none;
+}
+.site-nav a{
+    color: white;
+    display: block;
+    padding: 2em 6em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.site-nav-open{
+    height: auto;
+}
+.site-nav a:hover,
+.site-nav a:focus{
+    
+    color: tomato;
+}
+
+.menu-toggle{
+    
+    padding: 1em;
+    position: absolute;
+    top: .5em;
+    right: .5em;
+}
+.menu-open .prueba{
+    transform: rotate(45deg);
+}
+.menu-open .prueba::before{
+    opacity: 0;
+}
+.menu-open .prueba::after{
+    transform: translateY(-3px) rotate(-90deg);
+}
+
+.prueba,
+.prueba::before,
+.prueba::after{
+    content: '';
+    display: block;
+    background: #ebebd3;
+    height: 3px;
+    width: 1.75em;
+    border-radius: 3px;
+}
+.prueba::before{
+    transform: translateY(-6px);
+}
+.prueba::after{
+    transform: translateY(3px);
+}
+@media(min-width:700px){
+    .menu-toggle{
+        display: none;
+    }
+    .site-nav{
+        height: auto;
+        position: relative;
+        background: transparent;
+        float: right;
+        margin-right: 10px;
+        clip-path: initial;
+    }
+    .site-nav li{
+        display: inline-block;
+        border: none;
+    }
+    .site-nav a{
+        padding: 0;
+        margin-left: 2em;
+    }
+    
+    .site-nav a:hover,
+    .site-nav a:focus{
+        background: transparent;
+    }
+}
+/*pagina de registro */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.from-registro{
+    width: 450px;
+    background: darkcyan;
+    
+    padding: 20px;
+    margin: auto;
+    margin-top: 65px;
+    border-radius: 4px;
+    font-family: 'Reboto', sans-serif;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+.from-registro h4{
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.controles{
+    width: 100%;
+    background: white;
+    padding: 13px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 2px solid #1f53c5;
+    font-family: 'Reboto', sans-serif;
+    font-size: 18px;
+}
+.from-registro .boto{
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 14px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+.from-registro p{
+    height: 40px;
+    text-align: center;
+    font-size: 16px;
+}
+.from-registro a{
+    color: white;
+    text-decoration: none;
+
+}
+.from-registro a:hover{
+    color: white;
+    text-decoration: underline;
+}
+/*pagina de para acceder*/
+.from-login{
+    width: 450px;
+    background: darkcyan;
+    padding: 20px;
+    margin: auto;
+    margin-top: 65px;
+    border-radius: 4px;
+    font-family: 'Reboto', sans-serif;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+.from-login h4{
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.from-login .boto-lo{
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 14px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+.from-login p{
+    height: 40px;
+    text-align: center;
+    font-size: 16px;
+}
+.from-login a{
+    color: white;
+    text-decoration: none;
+
+}
+.from-login a:hover{
+    color: tomato;
+    text-decoration: underline;
+}
+/*pagina de transacciones*/
+.card {
+    width: 35%;
+    position: relative;
+    background: #ffffff;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.card .price {
+    position: absolute;
+}
+
+.card:hover > .card-info {
+    display: block;
+    transition: 0.2s all ease;
+}
+
+.card .card-buttons .btn:hover {
+    color: #ffffff;
+}
+
+.card:hover,
+.card-info {
+    box-shadow: 1px 1px 13px 2px rgba(94, 94, 94, 0.5);
+}
+.control{
+    width: 65%;
+    background: white;
+    padding: 13px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 2px solid ;
+    font-family: 'Reboto', sans-serif;
+    font-size: 18px;
+}
+.prue{
+    text-align: start;
+    
+    
+    font-family: 'Reboto', sans-serif;
+    font-size: 18px;
+}
+.boton-pedi{
+    width: 65%;
+    background: #1f53c5;
+    border: none;
+    padding: 14px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+.boton-A{
+    width: 65%;
+    background: #0ea31b;
+    border: none;
+    padding: 14px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+.boton-R{
+    width: 65%;
+    background: #b83239;
+    border: none;
+    padding: 14px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+.boton-M{
+    width: 65%;
+    background: #ce8736;
+    border: none;
+    padding: 14px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+.boton-P{
+    display: none;
+    width: 65%;
+    background: #0ea31b;
+    border: none;
+    padding: 14px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}

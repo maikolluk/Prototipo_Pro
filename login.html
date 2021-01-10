@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--utilizacion del main.js-->
+    <script src="main.js"></script> 
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <title>ACCEDER</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="Logo">logo <span>Empresa</span></h1>
+        </div>
+        <nav id="site-nav" class="site-nav">
+            <ul>
+                <li><a href="index.html"><i class="site-nav--icon">Inicio</i></a></li>
+                <li><a href="login.html"><i class="site-nav--icon">Acceder</i></a></li>
+                <li><a href="registroUsua.html"><i class="site-nav--icon">Registrarse</i></a></li>
+                <li><a href=""><i class="site-nav--icon">Acerca de</i></a></li>
+                <li><a href=""><i class="site-nav--icon">Idea de propuesta</i></a></li>
+                <li><a href="pagTrnasfe.html"><i class="site-nav--icon">Transacción</i></a></li>
+                <li><a href="pagConsul.html"><i class="site-nav--icon">Consulta</i></a></li>
+                <li><a href="pagiAdmin.html"><i class="site-nav--icon">Administración</i></a></li>
+            </ul>
+        </nav>
+        <div id="menu-toggle" class="menu-toggle" onclick="esconder()">
+            <div class="prueba"> </div>
+        </div>
+    </header>
+
+    <form action="" class="from-login">
+    
+        <h4>ACCEDER</h4>
+        <input class="controles" type="text" name="correo" id="correoAcces" placeholder="ingrese su correo">
+        <input class="controles" type="password" name="contrseña" id="claveAcces" placeholder="ingrese su contrseña">
+        <input class="boto-lo" type="submit" value="Ingresar" onclick="ingresar()">
+        <p><a href="registroUsua.html">Crear cuenta</a></p>
+    </form>
+</body>
+</html>

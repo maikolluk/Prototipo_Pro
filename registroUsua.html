@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--utilizacion del main.js-->
+    <script src="main.js"></script> 
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="Logo">logo <span>Empresa</span></h1>
+        </div>
+        <nav id="site-nav" class="site-nav">
+            <ul>
+                <li><a href="index.html"><i class="site-nav--icon">Inicio</i></a></li>
+                <li><a href="login.html"><i class="site-nav--icon">Acceder</i></a></li>
+                <li><a href="registroUsua.html"><i class="site-nav--icon">Registrarse</i></a></li>
+                <li><a href=""><i class="site-nav--icon">Acerca de</i></a></li>
+                <li><a href=""><i class="site-nav--icon">Idea de propuesta</i></a></li>
+                <li><a href="pagTrnasfe.html"><i class="site-nav--icon">Transacción</i></a></li>
+                <li><a href="pagConsul.html"><i class="site-nav--icon">Consulta</i></a></li>
+                <li><a href="pagiAdmin.html"><i class="site-nav--icon">Administración</i></a></li>
+            </ul>
+        </nav>
+        <div id="menu-toggle" class="menu-toggle" onclick="esconder()">
+            <div class="prueba"> </div>
+        </div>
+    </header>
+    <!--utilizacion del main.js-->
+    <script src="main.js"></script> 
+
+    <form action="" class="from-registro">
+    
+        <h4>REGISTRO DE USUARIO</h4>
+        <input class="controles" type="text" name="nombre" id="Nombre" placeholder="ingrese su nombre" 
+        >
+        <input class="controles" type="text" name="nombre" id="Apellido" placeholder="ingrese su apellido" >
+        <input class="controles" type="text" name="nombre" id="Correo" placeholder="ingrese su correo">
+        <input class="controles" type="password" name="nombre" id="Clave" placeholder="ingrese su contrseña">
+        <input class="boto" type="submit" value="registro" onclick="registro()">
+        <p><a href="login.html">¿ya tiene cuenta?</a></p>
+    </form>
+</body>
+</html>

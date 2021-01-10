@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <input type="button" id="btn-1" value="Botón 1" onclick="mostrarBoton()"/>
+    <input type="button" id="btn-2" value="Botón 2" style="display: none;"/>
+ 
+    <script>
+        var btn_1 = document.getElementById('btn-1');
+        var btn_2 = document.getElementById('btn-2');
+        
+        function mostrarBoton () {
+            btn_1.style.display = 'none';
+            btn_2.style.display = 'inline';
+        }
+    </script>
+</body>
+</html>
