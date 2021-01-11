@@ -61,13 +61,7 @@ function registro(){
         return false;
     ;
     }
-    else if(usuario == "admin" && clave == "1234"){
-        
-        return false;
-    } 
-    else if(usuario == "usuario" && clave == "1234"){
-        return false;
-    }
+    
      else {
         alert("Datos incorrectos, verifique usuario y contraseña");
         return false;
