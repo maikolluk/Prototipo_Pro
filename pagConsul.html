@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Consulta</title>
    <!--utilizacion del main.js-->
-   <script src="main.js"></script> 
+   <script src="consultas.js"></script> 
    <link rel="stylesheet" href="style.css">
    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 </head>
@@ -19,9 +19,9 @@
                 <li><a href="index.html"><i class="site-nav--icon">Inicio</i></a></li>
                 <li><a href="login.html"><i class="site-nav--icon">Acceder</i></a></li>
                 <li><a href="registroUsua.html"><i class="site-nav--icon">Registrarse</i></a></li>
-                <li><a href=""><i class="site-nav--icon">Acerca de</i></a></li>
-                <li><a href=""><i class="site-nav--icon">Idea de propuesta</i></a></li>
-                <li><a href="pagTrnasfe.html"><i class="site-nav--icon">Transacción</i></a></li>
+                <li><a href="index.html#Acerca"><i class="site-nav--icon">Acerca de</i></a></li>
+                <li><a href="index.html#Propuesta"><i class="site-nav--icon">Idea de propuesta</i></a></li>
+                <li><a href="pagUsua.html"><i class="site-nav--icon">Transacción</i></a></li>
                 <li><a href="pagConsul.html"><i class="site-nav--icon">Consulta</i></a></li>
                 <li><a href="pagiAdmin.html"><i class="site-nav--icon">Administración</i></a></li>
             </ul>
@@ -30,92 +30,52 @@
             <div class="prueba"> </div>
         </div>
     </header>
-    <form method="get" action="" target="_blank">
-        <input type="search" name="q" placeholder="buscar fecha de pedido" autofocus required>
-        <input type="submit"> 
-    </form>
-    <center>
-        <div class="card">
-            <span class="price">$89.99</span>
-            <img src="img/item-1.png" alt="" width="350"
-            height="341">
-            <div class="card-info">
-                <h4 class="has-text-black has-text-centered has-text-weight-bold"> Women's Burnt Orenge
-                    Casual TEE $89.99 </h4>
-                <p class="has-text-centered">Classic casual t-shirt for women on the move.
-                    100%
-                    cotton.</p>
-                    <label>Unidades disponible</label>
-                    <label id="unidad">1300</label>
-                    <br>
-                    <label>Usuario:</label>
-                    <label id="unidad">Pedro Loor</label>
-                    <br>
-                    <label>Dirección:</label>
-                    <label id="unidad">montecristi</label>
-                    <br>
-                    <label>Pedido:</label>
-                    <label id="unidad">200</label>
-                    <br>
-                    <label class="prue" for="envio">Envio</label>
-                    <input class="control" type="date" name="fenvi" id="fenvi" value="2021-01-10" min="2021-01-09">
-                    <br> 
-            </div>
-        </div>
-        <div class="card">
-            <span class="price">$89.99</span>
-            <img src="img/item-1.png" alt="" width="350"
-            height="341">
-            <div class="card-info">
-                <h4 class="has-text-black has-text-centered has-text-weight-bold"> Women's Burnt Orenge
-                    Casual TEE $89.99 </h4>
-                <p class="has-text-centered">Classic casual t-shirt for women on the move.
-                    100%
-                    cotton.</p>
-                    <label>Unidades disponible</label>
-                    <label id="unidad">1300</label>
-                    <br>
-                    <label>Usuario:</label>
-                    <label id="unidad">Pedro Loor</label>
-                    <br>
-                    <label>Dirección:</label>
-                    <label id="unidad">montecristi</label>
-                    <br>
-                    <label>Pedido:</label>
-                    <label id="unidad">200</label>
-                    <br>
-                    <label class="prue" for="envio">Envio</label>
-                    <input class="control" type="date" name="fenvi" id="fenvi" value="2021-01-10" min="2021-01-09">
-                    <br>                
-            </div>
-        </div>
-        <div class="card">
-            <span class="price">$89.99</span>
-            <img src="img/item-1.png" alt="" width="350"
-            height="341">
-            <div class="card-info">
-                <h4 class="has-text-black has-text-centered has-text-weight-bold"> Women's Burnt Orenge
-                    Casual TEE $89.99 </h4>
-                <p class="has-text-centered">Classic casual t-shirt for women on the move.
-                    100%
-                    cotton.</p>
-                    <label>Unidades disponible</label>
-                    <label id="unidad">1300</label>
-                    <br>
-                    <label>Usuario:</label>
-                    <label id="unidad">Pedro Loor</label>
-                    <br>
-                    <label>Dirección:</label>
-                    <label id="unidad">montecristi</label>
-                    <br>
-                    <label>Pedido:</label>
-                    <label id="unidad">200</label>
-                    <br>
-                    <label class="prue" for="envio">Envio</label>
-                    <input class="control" type="date" name="fenvi" id="fenvi" value="2021-01-10" min="2021-01-09">
-                    <br>                    
-            </div>
-        </div>
-    </center>
+    
+    <section>
+        <form action="" method="" class="from-registro">
+    
+            <h4>Consulta</h4>
+            <label >Cliente:</label>
+            <br>
+            <input class="controles" type="text" name="cliente" id="buscar"placeholder="buscar cliente ">
+            <label >Desde:</label>
+            <br>
+            <input class="controles" type="date" placeholder="Fecha desde..." value="" name="fechainicio"/>
+            <label>Hasta:</label>
+            <br>
+            <input class="controles" type="date" placeholder="Fecha hasta..." value="" name="fechafin"/>
+                   
+        </form>
+        <br>
+        <br>
+        <table id="tabla" class="table" border="1" style="margin: 0 auto;">
+            <tr> 
+                <th>Nombre Cliente</th> 
+                <th>Dirección</th>
+                <th>Fecha</th>
+                <th>Producto</th>
+                <th>Cantidad</th>
+            </tr>
+            <tbody>
+                <tr> 
+                    <td>Pedro Loor</td> 
+                    <td>montecristi</td>
+                    <td>09/01/2021</td>
+                    <td>botines de futbol</td>
+                    <td>100</td>
+               </tr>   
+
+               <tr> 
+                   <td>Carlos Lascano</td> 
+                   <td>manta</td>
+                   <td>02/01/2021</td>
+                   <td>Balones de Futbol</td>
+                   <td>150</td>
+              </tr>
+            </tbody>
+            </table>  
+               
+    </section>
+   
 </body>
 </html>

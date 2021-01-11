@@ -122,6 +122,37 @@ header::after{
         background: transparent;
     }
 }
+
+#categoria{
+    width: 900px;
+    height: auto; overflow: hidden;
+    border: 0px solid;
+    margin-top: 10px;
+}
+
+.uno{
+
+    height: 240px;
+    border: 0px solid;
+    
+    text-align: center;
+    width: 450px;
+  display: inline-block;
+  
+  text-align: justify;
+
+}
+
+/*pie de pagina */
+
+.container-footer{
+   width: 100%;
+   background: teal;
+   display: flex;
+   justify-content: space-between;
+   padding: 20px;
+   color: white;
+}
 /*pagina de registro */
 *{
     margin: 0;
